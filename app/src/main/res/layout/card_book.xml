@@ -35,5 +35,36 @@
 
         </androidx.cardview.widget.CardView>
 
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="34dp">
+
+            <include layout="@layout/card_content3" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="34dp">
+
+        <include layout="@layout/card_content4" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="34dp">
+
+            <include layout="@layout/card_content5" />
+        </androidx.cardview.widget.CardView>
+
     </LinearLayout>
 </HorizontalScrollView>
