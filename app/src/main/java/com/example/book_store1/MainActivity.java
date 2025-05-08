@@ -16,5 +16,8 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.latest_books);
 
+
     }
+
+
 }
