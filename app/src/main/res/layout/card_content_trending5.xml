@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageViewMyGrandmothersGuide"
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="660dp"
-        app:srcCompat="@drawable/my_grandmothers_guide" />
+        app:srcCompat="@drawable/between_the_tow_palaces" />
 
     <TextView
-        android:id="@+id/TVMyGrandMothersGuide1"
+        android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:text="My GrandMother's Guide"
+        android:text="Between The Tow Palaces"
         android:textSize="24sp" />
 
     <LinearLayout
@@ -27,28 +26,32 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton7"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton7">
 
             <ImageButton
-                android:id="@+id/imageButtonTVMyGrandMothersGuide"
-                tools:layout_editor_absoluteY="16dp"
-                android:layout_width="65dp"
+                android:id="@+id/imageButton7"
+                android:layout_width="0dp"
                 android:layout_height="62dp"
                 android:layout_marginEnd="19dp"
                 android:backgroundTint="#FFFFFF"
                 android:scaleType="centerCrop"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView6"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/cart" />
 
             <TextView
-                android:id="@+id/TVMyGrandMothersGuide2"
+                android:id="@+id/textView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="31dp"
-                android:layout_marginTop="24dp"
-                android:text="4.5JD"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="244dp"
+                android:text="3.5JD"
                 android:textSize="24sp"
+                app:layout_constraintEnd_toStartOf="@+id/imageButton7"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>

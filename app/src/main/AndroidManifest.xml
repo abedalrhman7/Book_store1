@@ -21,6 +21,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".CardBookLatestActivity"
+            android:label="latest books">
+        </activity>
+
+        <activity
+            android:name=".CardBookTrendingActivity"
+            android:label="Trending Books">
+        </activity>
+
     </application>
 
 </manifest>

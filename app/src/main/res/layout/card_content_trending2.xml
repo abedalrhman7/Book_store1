@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageViewLiveTheMoment"
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="660dp"
-        app:srcCompat="@drawable/live_the_moment" />
+        app:srcCompat="@drawable/secret_of_buying" />
 
     <TextView
-        android:id="@+id/TVLiveTheMoment1"
+        android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:text="Live The Moment"
+        android:text="The Secret To Wealth"
         android:textSize="24sp" />
 
     <LinearLayout
@@ -27,28 +26,33 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:backgroundTint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton7"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton7">
 
             <ImageButton
-                android:id="@+id/imageButtonLiveTheMoment"
-                tools:layout_editor_absoluteY="16dp"
-                android:layout_width="65dp"
+                android:id="@+id/imageButton7"
+                android:layout_width="0dp"
                 android:layout_height="62dp"
                 android:layout_marginEnd="19dp"
-                android:backgroundTint="#FFFFFF"
+                android:backgroundTint="#FAFAFA"
                 android:scaleType="centerCrop"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView6"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/cart" />
 
             <TextView
-                android:id="@+id/TVLiveTheMoment2"
+                android:id="@+id/textView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="31dp"
-                android:layout_marginTop="24dp"
-                android:text="3.5JD"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="244dp"
+                android:text="4.5JD"
                 android:textSize="24sp"
+                app:layout_constraintEnd_toStartOf="@+id/imageButton7"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
