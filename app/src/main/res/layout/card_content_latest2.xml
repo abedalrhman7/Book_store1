@@ -7,13 +7,13 @@
     android:orientation="vertical">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageViewBurning"
         android:layout_width="match_parent"
         android:layout_height="660dp"
         app:srcCompat="@drawable/burning_mind" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/TVBurning1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
@@ -27,32 +27,27 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_constraintBottom_toBottomOf="@+id/imageButton7"
-            app:layout_constraintTop_toBottomOf="@+id/imageButton7">
+            android:layout_height="match_parent">
 
             <ImageButton
-                android:id="@+id/imageButton7"
-                android:layout_width="0dp"
+                android:id="@+id/imageButtonBurning"
+                android:layout_width="65dp"
                 android:layout_height="62dp"
                 android:layout_marginEnd="19dp"
                 android:backgroundTint="#FFFFFF"
                 android:scaleType="centerCrop"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/textView6"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/cart" />
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/TVBurning2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="31dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="244dp"
+                android:layout_marginTop="24dp"
                 android:text="3JD"
                 android:textSize="24sp"
-                app:layout_constraintEnd_toStartOf="@+id/imageButton7"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>

@@ -32,8 +32,10 @@
             android:layout_margin="15dp"
             app:cardCornerRadius="34dp">
 
-            <include layout="@layout/card_content1" />
-
+            <include
+                layout="@layout/card_content1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -43,8 +45,10 @@
             android:layout_margin="15dp"
             app:cardCornerRadius="34dp">
 
-            <include layout="@layout/card_content3" />
-
+            <include
+                layout="@layout/card_content3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -54,7 +58,10 @@
             android:layout_margin="15dp"
             app:cardCornerRadius="34dp">
 
-            <include layout="@layout/card_content4" />
+            <include
+                layout="@layout/card_content4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -64,7 +71,10 @@
             android:layout_margin="15dp"
             app:cardCornerRadius="34dp">
 
-            <include layout="@layout/card_content5" />
+            <include
+                layout="@layout/card_content5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -74,7 +84,10 @@
             android:layout_margin="15dp"
             app:cardCornerRadius="34dp">
 
-            <include layout="@layout/card_content6" />
+            <include
+                layout="@layout/card_content6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
         </androidx.cardview.widget.CardView>
 
     </LinearLayout>

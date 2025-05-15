@@ -6,37 +6,40 @@
     android:layout_height="match_parent">
 
     <FrameLayout
-        android:id="@+id/frameLayout"
+        android:id="@+id/frameLayout2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Points3">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-        <include layout="@layout/card_book3" />
-
+        <include
+            layout="@layout/card_book3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
     </FrameLayout>
 
     <ImageButton
-        android:id="@+id/Points3"
-        android:layout_width="wrap_content"
+        android:id="@+id/pointsBest"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="39dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="15dp"
         android:backgroundTint="#304FFE"
+        app:layout_constraintBottom_toTopOf="@id/frameLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
 
     <TextView
-        android:id="@+id/TVTrendingBooks"
-        android:layout_width="wrap_content"
+        android:id="@+id/TVBest"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="51dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="8dp"
         android:text="Best Selling Price"
         android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

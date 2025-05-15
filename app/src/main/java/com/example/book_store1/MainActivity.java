@@ -17,8 +17,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.main_card_book);
-        ImageButton points3Button = findViewById(R.id.Points3);
+        ImageButton points3Button = findViewById(R.id.Points4);
         ImageButton points2Button = findViewById(R.id.Points2);
+        ImageButton pointsBestButton = findViewById(R.id.pointsBest);
 
         points3Button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,6 +40,20 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "ImageButton clicked!", Toast.LENGTH_SHORT).show();
             }
         });
-        }
+        pointsBestButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CardBookBestSellingPrice.class);
+
+                startActivity(intent);
+                Toast.makeText(MainActivity.this, "ImageButton clicked!", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
+
+
+}
+
 
 }

@@ -17,7 +17,7 @@
     </FrameLayout>
 
     <ImageButton
-        android:id="@+id/Points3"
+        android:id="@+id/Points4"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="15dp"

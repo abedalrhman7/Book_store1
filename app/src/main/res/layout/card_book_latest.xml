@@ -49,7 +49,7 @@
             app:cardCornerRadius="34dp">
 
             <include
-                layout="@layout/card_content3"
+                layout="@layout/card_content_latest3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </androidx.cardview.widget.CardView>
@@ -61,7 +61,7 @@
             app:cardCornerRadius="34dp">
 
             <include
-                layout="@layout/card_content4"
+                layout="@layout/card_content_latest4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </androidx.cardview.widget.CardView>
@@ -73,7 +73,7 @@
             app:cardCornerRadius="34dp">
 
             <include
-                layout="@layout/card_content5"
+                layout="@layout/card_content_latest5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </androidx.cardview.widget.CardView>
