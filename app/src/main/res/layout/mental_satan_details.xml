@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="236dp"
+            android:layout_height="289dp"
+            app:srcCompat="@drawable/satan"
+            tools:layout_editor_absoluteX="86dp" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Satan"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="175dp"
+            tools:layout_editor_absoluteY="277dp" />
+
+        <ImageButton
+            android:id="@+id/imageButtonFavSatan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#40FFFFFF"
+            app:srcCompat="@android:drawable/star_big_on"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:layout_editor_absoluteX="336dp"
+            tools:layout_editor_absoluteY="24dp" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="&quot;Maria&quot; is a beautiful girl who lives by stealing from gullible wealthy people to escape her difficult past. &quot;Ernesto,&quot; a kind-hearted priest on the verge of losing his faith, finds himself face-to-face with a girl possessed by overwhelming demonic powers. &quot;Andres,&quot; a painter with astonishing and terrifying supernatural abilities, turns his life upside down. All of them find themselves intertwined in the life of &quot;Campo Elias,&quot; a former soldier in the Vietnam War obsessed with the dilemma of good and evil in human souls, who decides in a moment that he is better than them all and must take on the role of the redeemer to cleanse the world, but in his own way."
+            android:textSize="24sp"
+            tools:layout_editor_absoluteY="369dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

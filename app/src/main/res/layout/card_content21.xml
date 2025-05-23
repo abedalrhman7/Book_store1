@@ -33,12 +33,14 @@
                 android:id="@+id/imageButtonAFewHours"
                 android:layout_width="65dp"
                 android:layout_height="62dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginEnd="19dp"
                 android:backgroundTint="#FFFFFF"
                 android:scaleType="centerCrop"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/cart"
-                tools:layout_editor_absoluteY="16dp" />
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <TextView
                 android:id="@+id/TVAFewHours2"

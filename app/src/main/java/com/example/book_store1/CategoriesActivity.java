@@ -1,6 +1,6 @@
-
 package com.example.book_store1;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -9,12 +9,14 @@ import android.widget.ListView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
+import MentalBooksDetails.MentalHealthActivity;
+import SportBooksDetails.SportActivity;
+
 public class CategoriesActivity extends AppCompatActivity {
 
-
     String[] categories = {
-            "Fiction", "Science", "History", "Biography", "Fantasy",
-            "Mystery", "Technology", "Self-Help", "Children's Books"
+            "Management and Business Administration", "Literature and Novels", "History and Politics", "Self development", "Religious Studies",
+            "Sport", "Mental health", "Health and Diet"
     };
 
     ListView listView;
@@ -34,13 +36,42 @@ public class CategoriesActivity extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String selectedCategory = categories[position];
-                Toast.makeText(CategoriesActivity.this, "Clicked: " + selectedCategory, Toast.LENGTH_SHORT).show();
-                // Later, you can navigate to another activity based on the selectedCategory
+
+                if (selectedCategory.equals("Management and Business Administration")) {
+                    Intent intent = new Intent(CategoriesActivity.this, ManagementAdminActivity.class);
+                    startActivity(intent);
+                } else if (selectedCategory.equals("Literature and Novels")) {
+                    Intent intent = new Intent(CategoriesActivity.this, LiteratureNovelsActivity.class);
+                    startActivity(intent);
+                } else if (selectedCategory.equals("History and Politics")) {
+                    Intent intent = new Intent(CategoriesActivity.this, HistoryPoliticsActivity.class);
+                    startActivity(intent);
+                } else if (selectedCategory.equals("Self development")) {
+                    Intent intent = new Intent(CategoriesActivity.this, SelfDevelopmentActivity.class);
+                    startActivity(intent);
+                } else if (selectedCategory.equals("Religious Studies")) {
+                    Intent intent = new Intent(CategoriesActivity.this, ReligiousStudiesActivity.class);
+                    startActivity(intent);
+                } else if (selectedCategory.equals("Sport")) {
+                    Intent intent = new Intent(CategoriesActivity.this, SportActivity.class);
+                    startActivity(intent);
+                } else if (selectedCategory.equals("Mental health")) {
+                    Intent intent = new Intent(CategoriesActivity.this, MentalHealthActivity.class);
+                    startActivity(intent);
+                } else if (selectedCategory.equals("Health and Diet")) { // <-- ADD THIS BLOCK
+                    Toast.makeText(CategoriesActivity.this, selectedCategory + " coming soon!", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(CategoriesActivity.this, HealthDietActivity.class);
+                    startActivity(intent);
+
+                }
+
+                else {
+                    Toast.makeText(CategoriesActivity.this, "Details for " + selectedCategory + " coming soon!", Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }

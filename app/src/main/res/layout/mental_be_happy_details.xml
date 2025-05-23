@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="SpeakableTextPresentCheck">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButtonFavBeHappy"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="301dp"
+                android:backgroundTint="#40FFFFFF"
+                android:scaleType="centerInside"
+                android:src="@drawable/heart"
+                app:layout_constraintStart_toEndOf="@+id/imageView5"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:srcCompat="@drawable/heart" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="239dp"
+                android:layout_height="289dp"
+                android:layout_marginStart="86dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/be_happy" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="4dp"
+                android:text="Be Happy"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="374dp"
+                android:layout_height="478dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="Imagine possessing the priceless antidote. Imagine seeing a part of paradise, a part that only private people reach. Happiness is the reward of a long journey that encapsulates your entire life and the lives of others who have succeeded in possessing that secret. The vast majority of people don't know a path to happiness, but the elixir of happiness is the great ray of the universe.... Your inner light. Life in its optimal dress. Happiness is a disease, an infection and a medicine. If happiness is a disease, let the disease of happiness spread now among the world. If it becomes a medicine, let's spread the antidote to happiness in the world."
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="SpeakableTextPresentCheck">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imageButtonFavFootballWars"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="305dp"
+                android:layout_marginEnd="34dp"
+                android:backgroundTint="#40FFFFFF"
+                android:scaleType="centerInside"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@android:drawable/star_big_on"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:srcCompat="@drawable/heart" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="236dp"
+                android:layout_height="289dp"
+                android:layout_marginStart="86dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="89dp"
+                app:layout_constraintBottom_toTopOf="@+id/imageButtonFavFootballWars"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/football_wars" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="131dp"
+                android:layout_marginTop="13dp"
+                android:gravity="center"
+                android:text="Football Wars"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="39dp"
+                android:gravity="left"
+                android:text="This book talks about this language that humanity has created, and the hate wars it has created in stadiums and outside them. We are talking about football. That elegant ball which struck a rendezvous with pleasure, catching groans of admiration, making exhalations of sorrow, and becoming a banner of glory for some and a pillow of sorrows for others. This is the ball that rolls to embrace the grass or the net after a mythical playing of the symphony of feet, and it may grow wings and fly in time and space at a speed that makes the light jealous of it, searching for the goal, until it becomes the ball of fate. Thus, we embarked on a journey to learn about the truth about football and the reason why fans are attached to it, the heroes and victims of the game, its relationship with literature and writers, its sexual fantasies, the most important influential goals in the deadly time, the role of ethnic minorities in seizing championships, the mistakes of goalkeepers in the World Cup, and the national pride that gives the stadium The color of the homeland, and the stories of political leaders and tyrants with the football witch. In the book, we touched, with names and facts, on the fiercest players, the secret of football’s connection to the concept of force and violent behavior, all the way to waging wars, the generator of fanaticism, and football riot groups. From the general to the specific, we began researching the history of football in Egypt, the role of the British occupation, the birth of famous clubs, and the rise of the people of government and the palace to football positions and positions. We wanted to provide a bright model for the championship that is born from the womb of defeat, so we stopped at the Dervishes’ experience in the African Club Champions League in the 1969-1970 season. From one voyage to another, we sailed until we reached the crux of the tale: Egypt and Algeria! We will not forget to shed light on those with money and influence who rejoice and involve themselves by name and image in scenes of football victory, the crisis media that led us into gross misinformation before we discovered the media crisis. If the ball is the title of belonging, it has also become the question of identity.. Both national and religious. From here, we followed religion on the ballparks, the stars of the game, and the behaviors of fans."
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>

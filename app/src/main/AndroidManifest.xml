@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Book_store1"
         tools:targetApi="31">
         <activity
+            android:name=".ManagementAdminActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -24,16 +27,72 @@
         <activity
             android:name=".CardBookLatestActivity"
             android:label="latest books">
-        </activity>
 
+        </activity>
         <activity
             android:name=".CardBookTrendingActivity"
             android:label="Trending Books">
-        </activity>
 
+        </activity>
         <activity
             android:name=".CardBookBestSellingPrice"
             android:label="latest books">
+
+        </activity>
+        <activity android:name=".CategoriesActivity">
+
+        </activity>
+
+        <activity android:name=".LiteratureNovelsActivity">
+
+        </activity>
+        <activity android:name=".HistoryPoliticsActivity">
+
+        </activity>
+        <activity android:name=".SelfDevelopmentActivity">
+
+        </activity>
+        <activity android:name=".ReligiousStudiesActivity">
+
+        </activity>
+        <activity android:name="SportBooksDetails.SportActivity">
+
+        </activity>
+
+        <activity android:name="MentalBooksDetails.MentalHealthActivity">
+
+        </activity>
+
+        <activity android:name=".HealthDietActivity">
+
+        </activity>
+
+        <activity android:name="MentalBooksDetails.MentalBooksDetailsActivity">
+
+        </activity>
+
+        <activity android:name="MentalBooksDetails.MentalSatanActivity">
+
+        </activity>
+
+        <activity android:name="MentalBooksDetails.MentalToleranceActivity">
+
+        </activity>
+
+        <activity android:name="MentalBooksDetails.MentalBeHappyActivity">
+
+        </activity>
+
+        <activity android:name="MentalBooksDetails.MentalGuardianActivity">
+
+        </activity>
+
+        <activity android:name="SportBooksDetails.SportBallGeneralsDetailsActivity">
+
+        </activity>
+
+        <activity android:name="SportBooksDetails.SportFootballWarsDetailsActivity">
+
         </activity>
 
     </application>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="236dp"
+                android:layout_height="289dp"
+                android:layout_marginStart="86dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/textView17"
+                app:layout_constraintEnd_toStartOf="@+id/imageButtonFavBallGenerals"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ball_generals" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="136dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="136dp"
+                android:layout_marginBottom="56dp"
+                android:text="Ball Generals"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/textView18"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+            <ImageButton
+                android:id="@+id/imageButtonFavBallGenerals"
+                android:layout_width="56dp"
+                android:layout_height="71dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="307dp"
+                android:layout_marginEnd="33dp"
+                android:layout_marginBottom="4dp"
+                android:backgroundTint="#40FFFFFF"
+                android:scaleType="centerInside"
+                app:layout_constraintBottom_toTopOf="@+id/textView18"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView17"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@android:drawable/star_big_on"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:srcCompat="@drawable/heart" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="12dp"
+                android:gravity="left"
+                android:text="Football GeneralsFrom Maradona to HaalandThe lines before you erase the distance between football and writing, glorifying the game and its heroes, penetrating the hidden circle of daily monotony, and adding new minutes of eternal beauty to the lives of readers.Glory to those who taught us all the lessons of cunning in one night: from Maradona to Haaland, passing through stars like Paolo Rossi, Gerd Müller, Zlatan Ibrahimović, Mesut Özil, and Agüero!Here we write about the football generals and icons of the game, both Arab and international.About the goal scorer who is caught by all corners of the world, and every time he shakes the nets of his opponents, he raises his finger to his mouth.About goals that linger like steam prints on a cold window.About the white ball sprinkled with salt and black pepper, that once you see it, there is no longer a past or future.We write about the great love that knows no logic: football."
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView17" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>
