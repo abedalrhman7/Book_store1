@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="34dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp">
+
+            <include
+                layout="@layout/card_content31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="34dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp">
+
+            <include
+                layout="@layout/card_content32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="34dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp">
+
+            <include
+                layout="@layout/card_content33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="34dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp">
+
+            <include
+                layout="@layout/card_content34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="34dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp">
+
+            <include
+                layout="@layout/card_content35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="34dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp">
+
+            <include
+                layout="@layout/card_content36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</HorizontalScrollView>
