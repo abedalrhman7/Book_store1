@@ -23,11 +23,11 @@
             android:textSize="24sp" />
 
         <androidx.cardview.widget.CardView
-            android:layout_width="390dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="20dp"
-            app:cardCornerRadius="34dp" >
+            app:cardCornerRadius="34dp">
 
             <include
                 layout="@layout/card_content_religious_studies_quranic_answer"
@@ -36,12 +36,12 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="390dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="40dp"
             android:layout_weight="1"
-            app:cardCornerRadius="34dp" >
+            app:cardCornerRadius="34dp">
 
             <include
                 layout="@layout/card_content_religious_studies_the_los_treasure"
@@ -50,11 +50,11 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="390dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="40dp"
-            app:cardCornerRadius="34dp" >
+            app:cardCornerRadius="34dp">
 
             <include
                 layout="@layout/card_content_religious_studies_the_genius_of_muhammad"
@@ -63,11 +63,11 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="390dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="40dp"
-            app:cardCornerRadius="34dp" >
+            app:cardCornerRadius="34dp">
 
             <include
                 layout="@layout/card_content_religious_studies_amessage_from_god"

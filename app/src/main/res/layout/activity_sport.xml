@@ -22,11 +22,11 @@
             android:textSize="24sp" />
 
         <androidx.cardview.widget.CardView
-            android:layout_width="390dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="20dp"
-            app:cardCornerRadius="34dp" >
+            app:cardCornerRadius="34dp">
 
             <include
                 layout="@layout/card_content_sport_ball_generals"
@@ -35,11 +35,11 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="390dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="40dp"
-            app:cardCornerRadius="34dp" >
+            app:cardCornerRadius="34dp">
 
             <include
                 layout="@layout/card_content_sport_football_wars"
@@ -48,7 +48,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="390dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="40dp"
@@ -61,11 +61,11 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="390dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="40dp"
-            app:cardCornerRadius="34dp" >
+            app:cardCornerRadius="34dp">
 
             <include
                 layout="@layout/card_content_sport_liverpool_city"

@@ -15,23 +15,24 @@
             android:layout_height="match_parent">
 
             <ImageButton
-                android:id="@+id/imageButtonFavTolerance"
+                android:id="@+id/imageButtonFavMessage"
                 android:layout_width="55dp"
                 android:layout_height="55dp"
-                android:layout_marginTop="307dp"
+                android:layout_marginTop="287dp"
                 android:layout_marginEnd="33dp"
-                android:layout_marginBottom="4dp"
+                android:layout_marginBottom="20dp"
                 android:backgroundTint="#40FFFFFF"
                 android:scaleType="centerInside"
-                app:layout_constraintBottom_toTopOf="@+id/textView20"
+                app:layout_constraintBottom_toTopOf="@+id/textView28"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView9"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/heart"
                 tools:ignore="SpeakableTextPresentCheck"
                 tools:srcCompat="@drawable/heart" />
 
             <ImageView
-                android:id="@+id/imageView6"
+                android:id="@+id/imageView9"
                 android:layout_width="235dp"
                 android:layout_height="289dp"
                 android:layout_marginStart="86dp"
@@ -42,26 +43,27 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/tolerance" />
+                app:srcCompat="@drawable/amessage_from_god" />
 
             <TextView
-                android:id="@+id/textView19"
+                android:id="@+id/textView27"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="100dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="36dp"
-                android:layout_marginBottom="56dp"
-                android:text="Tolerance"
+                android:layout_marginStart="163dp"
+                android:layout_marginEnd="54dp"
+                android:layout_marginBottom="33dp"
+                android:text="A message From God"
                 android:textSize="24sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/textView20"
-                app:layout_constraintEnd_toStartOf="@+id/imageButtonFavTolerance"
+                app:layout_constraintBottom_toTopOf="@+id/textView28"
+                app:layout_constraintEnd_toStartOf="@+id/imageButtonFavMessage"
+                app:layout_constraintHorizontal_bias="0.595"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+                app:layout_constraintTop_toBottomOf="@+id/imageView9"
+                app:layout_constraintVertical_bias="0.0" />
 
             <TextView
-                android:id="@+id/textView20"
+                android:id="@+id/textView28"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="14dp"
@@ -69,12 +71,13 @@
                 android:layout_marginEnd="12dp"
                 android:gravity="center"
                 android:scrollHorizontally="false"
-                android:text="Who among us has not found themselves in a situation that required them to forgive in order to resolve a conflict? Whether it’s a situation with a lover, a friend, or perhaps even a stranger in the street who accidentally bumped into you, causing you to feel angry, when if you had just smiled and overlooked it, they would have smiled back and the matter would have ended amicably.Who among us hasn’t seen themselves one day as being too big to forgive someone for a mistake they made against them, stubbornly resisting the other party, causing things to become more complicated?But who said that forgiveness is a weakness, or that forgiveness is only for the sake of others? We are strong when we forgive, we are better when we forgive... we are more compassionate and beautiful when we forgive. Did not the Prophet (peace be upon him) say: 'Shall I not tell you who the fire is forbidden upon?' They said: 'Yes, O Messenger of Allah.' He said: 'Every gentle, kind, close, and easy person.'Or does anyone among you dislike being soft-hearted and pure in spirit?"
+                android:text="The Quran was and will remain a method for building life... a sun for every seeker... a comfort for every worried person... and a lifeline for every confused person. It is a unique world... the world of the Quran... a magical and rich world. The more you delve into it, the more you learn, understand, enjoy, and your mind will be enlightened by all its beautiful meanings. An enjoyable and rich book, full of meanings and concepts of light... and treasures of knowledge, love, and humanity... and messages to us from Allah Almighty that are as countless as the verses of the Quran. Enjoy, through the pages of this book, a small part of Allah’s messages, and live and delve into the Quran with the pages of the book (A Message from Allah)"
                 android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.538"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView19" />
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonFavMessage" />
         </androidx.constraintlayout.widget.ConstraintLayout>
-
     </LinearLayout>
 </ScrollView>

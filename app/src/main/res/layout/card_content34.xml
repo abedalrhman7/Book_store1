@@ -9,7 +9,7 @@
     <ImageView
         android:id="@+id/imageViewThePowerOFPharaoas"
         android:layout_width="match_parent"
-        android:layout_height="660dp"
+        android:layout_height="250dp"
         app:srcCompat="@drawable/the_power_of_pharaohs" />
 
     <TextView

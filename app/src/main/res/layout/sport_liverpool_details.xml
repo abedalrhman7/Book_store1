@@ -15,66 +15,64 @@
             android:layout_height="match_parent">
 
             <ImageButton
-                android:id="@+id/imageButtonFavTolerance"
+                android:id="@+id/imageButtonFavShikabala2"
                 android:layout_width="55dp"
                 android:layout_height="55dp"
-                android:layout_marginTop="307dp"
-                android:layout_marginEnd="33dp"
-                android:layout_marginBottom="4dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="284dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginBottom="31dp"
                 android:backgroundTint="#40FFFFFF"
                 android:scaleType="centerInside"
-                app:layout_constraintBottom_toTopOf="@+id/textView20"
+                app:layout_constraintBottom_toTopOf="@+id/textView24"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView7"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/heart"
                 tools:ignore="SpeakableTextPresentCheck"
                 tools:srcCompat="@drawable/heart" />
 
             <ImageView
-                android:id="@+id/imageView6"
+                android:id="@+id/imageView7"
                 android:layout_width="235dp"
                 android:layout_height="289dp"
-                android:layout_marginStart="86dp"
+                android:layout_marginStart="64dp"
                 android:layout_marginTop="8dp"
-                android:layout_marginEnd="86dp"
                 android:layout_marginBottom="10dp"
                 app:layout_constraintBottom_toTopOf="@+id/textView19"
-                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/tolerance" />
+                app:srcCompat="@drawable/liverpool_city" />
 
             <TextView
-                android:id="@+id/textView19"
+                android:id="@+id/textView23"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="100dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="36dp"
-                android:layout_marginBottom="56dp"
-                android:text="Tolerance"
+                android:layout_marginStart="108dp"
+                android:layout_marginBottom="42dp"
+                android:text="Liverpool City"
                 android:textSize="24sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/textView20"
-                app:layout_constraintEnd_toStartOf="@+id/imageButtonFavTolerance"
+                app:layout_constraintBottom_toTopOf="@+id/textView24"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+                app:layout_constraintTop_toBottomOf="@+id/imageView7"
+                app:layout_constraintVertical_bias="0.0" />
 
             <TextView
-                android:id="@+id/textView20"
+                android:id="@+id/textView24"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="14dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="31dp"
                 android:layout_marginEnd="12dp"
                 android:gravity="center"
                 android:scrollHorizontally="false"
-                android:text="Who among us has not found themselves in a situation that required them to forgive in order to resolve a conflict? Whether it’s a situation with a lover, a friend, or perhaps even a stranger in the street who accidentally bumped into you, causing you to feel angry, when if you had just smiled and overlooked it, they would have smiled back and the matter would have ended amicably.Who among us hasn’t seen themselves one day as being too big to forgive someone for a mistake they made against them, stubbornly resisting the other party, causing things to become more complicated?But who said that forgiveness is a weakness, or that forgiveness is only for the sake of others? We are strong when we forgive, we are better when we forgive... we are more compassionate and beautiful when we forgive. Did not the Prophet (peace be upon him) say: 'Shall I not tell you who the fire is forbidden upon?' They said: 'Yes, O Messenger of Allah.' He said: 'Every gentle, kind, close, and easy person.'Or does anyone among you dislike being soft-hearted and pure in spirit?"
+                android:text="The events begin when the eldest brother, Matthias, dies, and the family's fortunes are turned upside down. The mother loses interest in her other children, and the father takes care of them as if they were cows kept in the barn. In the midst of all this, Jas, the eldest sister, grows up... who wears her red coat and refuses to take it off ever again. Her name means &quot;coat&quot; in Dutch, and she has linked it to her identity and self; if she takes it off, she loses herself, and she is losing herself little by little."
                 android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.538"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView19" />
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonFavShikabala2" />
         </androidx.constraintlayout.widget.ConstraintLayout>
-
     </LinearLayout>
 </ScrollView>

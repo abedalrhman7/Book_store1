@@ -29,11 +29,6 @@ public class MainActivity extends AppCompatActivity {
         ImageButton pointsBestButton = findViewById(R.id.pointsBest);
         ImageButton categoriesButton = findViewById(R.id.Categories);
 
-
-
-
-
-
         categoriesButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -23,7 +23,7 @@
             android:textSize="24sp" />
 
         <androidx.cardview.widget.CardView
-            android:layout_width="390dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="20dp"
@@ -37,7 +37,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="390dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="40dp"
@@ -50,7 +50,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="390dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="40dp"
@@ -63,11 +63,11 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="390dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="40dp"
-            app:cardCornerRadius="34dp" >
+            app:cardCornerRadius="34dp">
 
             <include
                 layout="@layout/card_content_manage_how_to_expand_your_business"
@@ -76,11 +76,11 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="390dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="40dp"
-            app:cardCornerRadius="34dp" >
+            app:cardCornerRadius="34dp">
 
             <include
                 layout="@layout/card_content_manage_dierectors_room"

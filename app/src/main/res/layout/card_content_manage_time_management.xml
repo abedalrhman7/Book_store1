@@ -9,7 +9,7 @@
     <ImageView
         android:id="@+id/imageViewManageTimeManagement"
         android:layout_width="match_parent"
-        android:layout_height="660dp"
+        android:layout_height="250dp"
         app:srcCompat="@drawable/time_management" />
 
     <TextView

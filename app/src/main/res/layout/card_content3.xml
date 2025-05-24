@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/imageViewPatientsGuide"
-        android:layout_width="match_parent"
-        android:layout_height="660dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
         app:srcCompat="@drawable/patient_guide" />
 
     <TextView

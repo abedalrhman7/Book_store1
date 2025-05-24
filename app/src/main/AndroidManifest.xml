@@ -52,7 +52,7 @@
         <activity android:name=".SelfDevelopmentActivity">
 
         </activity>
-        <activity android:name=".ReligiousStudiesActivity">
+        <activity android:name="ReligiousBooksDetails.ReligiousStudiesActivity">
 
         </activity>
         <activity android:name="SportBooksDetails.SportActivity">
@@ -95,7 +95,24 @@
 
         </activity>
 
+        <activity android:name=".RegisterActivity">
 
+        </activity>
+
+        <activity android:name=".LoginActivity">
+
+        </activity>
+
+        <activity android:name="SportBooksDetails.SportShikabalaDetailsActivity">
+
+        </activity>
+
+        <activity android:name="SportBooksDetails.SportLiverpoolDetailsActivity">
+
+        </activity>
+        <activity android:name="ReligiousBooksDetails.ReligiousMessageDetailsActivity">
+
+    </activity>
     </application>
 
 </manifest>

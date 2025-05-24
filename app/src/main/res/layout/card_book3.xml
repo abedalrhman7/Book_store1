@@ -10,11 +10,11 @@
         android:orientation="horizontal">
 
         <androidx.cardview.widget.CardView
-            app:cardCornerRadius="34dp"
-            android:layout_width="wrap_content"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_margin="15dp">
+            android:layout_margin="12dp"
+            app:cardCornerRadius="34dp">
 
             <include
                 layout="@layout/card_content31"
@@ -23,11 +23,11 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            app:cardCornerRadius="34dp"
-            android:layout_width="wrap_content"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_margin="15dp">
+            android:layout_margin="15dp"
+            app:cardCornerRadius="34dp">
 
             <include
                 layout="@layout/card_content32"
@@ -36,11 +36,11 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            app:cardCornerRadius="34dp"
-            android:layout_width="wrap_content"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_margin="15dp">
+            android:layout_margin="15dp"
+            app:cardCornerRadius="34dp">
 
             <include
                 layout="@layout/card_content33"
@@ -49,11 +49,11 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            app:cardCornerRadius="34dp"
-            android:layout_width="wrap_content"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_margin="15dp">
+            android:layout_margin="15dp"
+            app:cardCornerRadius="34dp">
 
             <include
                 layout="@layout/card_content34"
@@ -62,11 +62,11 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            app:cardCornerRadius="34dp"
-            android:layout_width="wrap_content"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_margin="15dp">
+            android:layout_margin="15dp"
+            app:cardCornerRadius="34dp">
 
             <include
                 layout="@layout/card_content35"
@@ -75,11 +75,11 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            app:cardCornerRadius="34dp"
-            android:layout_width="wrap_content"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_margin="15dp">
+            android:layout_margin="15dp"
+            app:cardCornerRadius="34dp">
 
             <include
                 layout="@layout/card_content36"

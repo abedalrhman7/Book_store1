@@ -9,7 +9,7 @@
     <ImageView
         android:id="@+id/imageViewSelfDevelopDontSayIDidntWarnYou"
         android:layout_width="match_parent"
-        android:layout_height="660dp"
+        android:layout_height="250dp"
         app:srcCompat="@drawable/dont_say_i_didnt_warn_you" />
 
     <TextView

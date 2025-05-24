@@ -9,7 +9,7 @@
     <ImageView
         android:id="@+id/imageViewManageHowYoExpandYourBusiness"
         android:layout_width="match_parent"
-        android:layout_height="660dp"
+        android:layout_height="250dp"
         app:srcCompat="@drawable/how_to_expand_your_business" />
 
     <TextView

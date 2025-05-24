@@ -5,17 +5,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import MentalBooksDetails.MentalHealthActivity;
+import ReligiousBooksDetails.ReligiousStudiesActivity;
 import SportBooksDetails.SportActivity;
 
 public class CategoriesActivity extends AppCompatActivity {
-
+Button buttonRegister, buttonLogin;
     String[] categories = {
-            "Management and Business Administration", "Literature and Novels", "History and Politics", "Self development", "Religious Studies",
+            "Management and Business", "Literature and Novels", "History and Politics", "Self development", "Religious Studies",
             "Sport", "Mental health", "Health and Diet"
     };
 
@@ -35,13 +37,31 @@ public class CategoriesActivity extends AppCompatActivity {
         );
 
         listView.setAdapter(adapter);
+        buttonRegister =findViewById(R.id.button6);
+        buttonLogin = findViewById(R.id.button9);
+    buttonRegister.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent reginterIntent = new Intent(CategoriesActivity.this, RegisterActivity.class);
 
+            startActivity(reginterIntent);
+        }
+    });
+
+        buttonLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent loginIntent = new Intent(CategoriesActivity.this, LoginActivity.class);
+
+                startActivity(loginIntent);
+            }
+        });
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String selectedCategory = categories[position];
 
-                if (selectedCategory.equals("Management and Business Administration")) {
+                if (selectedCategory.equals("Management and Business")) {
                     Intent intent = new Intent(CategoriesActivity.this, ManagementAdminActivity.class);
                     startActivity(intent);
                 } else if (selectedCategory.equals("Literature and Novels")) {
