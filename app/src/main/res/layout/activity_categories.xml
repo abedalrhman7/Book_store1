@@ -1,13 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CategoriesActivity">
 
-    <ListView
-        android:id="@+id/listViewCategories"
+    <com.google.android.material.navigation.NavigationView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ListView
+                android:id="@+id/listViewCategories"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="204dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="209dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="243dp"
+                android:backgroundTint="#304FFE"
+                android:drawableLeft="@drawable/app_registration_imresizer"
+                android:text="Registration"
+                app:cornerRadius="1dp"
+                app:iconPadding="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/listViewCategories"
+                app:layout_constraintTop_toBottomOf="@+id/listViewCategories" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="209dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginEnd="243dp"
+                android:backgroundTint="#304FFE"
+                android:drawableLeft="@drawable/login_imresizer"
+                android:text="Login"
+                app:cornerRadius="1dp"
+                app:iconPadding="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/listViewCategories"
+                app:layout_constraintTop_toBottomOf="@+id/listViewCategories" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.navigation.NavigationView>
 
 </RelativeLayout>

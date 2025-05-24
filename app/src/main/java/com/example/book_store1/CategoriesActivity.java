@@ -69,6 +69,7 @@ public class CategoriesActivity extends AppCompatActivity {
 
                 }
 
+
                 else {
                     Toast.makeText(CategoriesActivity.this, "Details for " + selectedCategory + " coming soon!", Toast.LENGTH_SHORT).show();
                 }
