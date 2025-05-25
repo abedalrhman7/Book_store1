@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:ignore="SpeakableTextPresentCheck">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,10 +16,10 @@
             android:layout_height="match_parent">
 
             <ImageButton
-                android:id="@+id/imageButtonFavMessage"
+                android:id="@+id/imageButtonFavRelgiLosTreasure"
                 android:layout_width="55dp"
                 android:layout_height="55dp"
-                android:layout_marginTop="288dp"
+                android:layout_marginTop="284dp"
                 android:layout_marginEnd="16dp"
                 android:backgroundTint="#40FFFFFF"
                 android:scaleType="centerInside"
@@ -29,7 +30,7 @@
                 tools:srcCompat="@drawable/heart" />
 
             <ImageView
-                android:id="@+id/imageView9"
+                android:id="@+id/imageView12"
                 android:layout_width="235dp"
                 android:layout_height="289dp"
                 android:layout_marginStart="86dp"
@@ -40,41 +41,35 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/amessage_from_god" />
+                app:srcCompat="@drawable/the_los_treasure" />
 
             <TextView
-                android:id="@+id/textView27"
+                android:id="@+id/textView33"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="163dp"
-                android:layout_marginEnd="54dp"
-                android:layout_marginBottom="33dp"
-                android:text="A message From God"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="26dp"
+                android:text="The Los Treasure"
                 android:textSize="24sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/textView28"
-                app:layout_constraintEnd_toStartOf="@+id/imageButtonFavMessage"
-                app:layout_constraintHorizontal_bias="0.672"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView9"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintBottom_toTopOf="@+id/textView34"
+                app:layout_constraintEnd_toStartOf="@+id/imageButtonFavRelgiLosTreasure"
+                app:layout_constraintTop_toBottomOf="@+id/imageView12"
+                app:layout_constraintVertical_bias="1.0" />
 
             <TextView
-                android:id="@+id/textView28"
+                android:id="@+id/textView34"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="14dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="12dp"
+                android:layout_marginTop="16dp"
                 android:gravity="center"
                 android:scrollHorizontally="false"
-                android:text="The Quran was and will remain a method for building life... a sun for every seeker... a comfort for every worried person... and a lifeline for every confused person. It is a unique world... the world of the Quran... a magical and rich world. The more you delve into it, the more you learn, understand, enjoy, and your mind will be enlightened by all its beautiful meanings. An enjoyable and rich book, full of meanings and concepts of light... and treasures of knowledge, love, and humanity... and messages to us from Allah Almighty that are as countless as the verses of the Quran. Enjoy, through the pages of this book, a small part of Allah’s messages, and live and delve into the Quran with the pages of the book (A Message from Allah)"
+                android:text="This work deals with a number of the sacred hadiths that Allah (Glory be to Him) revealed to His noble Messenger (peace and blessings be upon him) to define Him, glorify His attributes, and appreciate His divine right; so that we may draw closer and closer to the One, Almighty God, and to recognize His attributes that surround us and see Allah (Glory be to Him) through them. The lost treasure is seeing our Lord (Glory be to Him) in everything; He is the paradise in which the righteous live, and you will find them grateful in blessings, patient in affliction, and diligent in matters of sustenance."
                 android:textSize="24sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.538"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageButtonFavMessage" />
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonFavRelgiLosTreasure" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 </ScrollView>

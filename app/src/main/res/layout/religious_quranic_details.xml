@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imageButtonFavReligQuranic"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="288dp"
+                android:layout_marginEnd="33dp"
+                android:layout_marginBottom="7dp"
+                android:backgroundTint="#40FFFFFF"
+                android:scaleType="centerInside"
+                app:layout_constraintBottom_toTopOf="@+id/textView30"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView10"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/heart"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:srcCompat="@drawable/heart" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="235dp"
+                android:layout_height="289dp"
+                android:layout_marginStart="86dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="86dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/textView19"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/quranic_answer" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="162dp"
+                android:layout_marginEnd="55dp"
+                android:layout_marginBottom="21dp"
+                android:text="Quranic Answer"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/textView30"
+                app:layout_constraintEnd_toStartOf="@+id/imageButtonFavReligQuranic"
+                app:layout_constraintHorizontal_bias="0.656"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView10"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:gravity="center"
+                android:scrollHorizontally="false"
+                android:text="I hope this book will pique your interest from the first glance! The background is beautiful, and the title is reasonably appealing. Not to mention that existential questions are truly the problem of our time, and questions about the existence of God, prophecy, divine justice, destiny, and religions have moved from closed offices to television screens. I hope you've turned this book over in your hands, weighing its weight and trying to internally assess whether you'll gain benefit and enjoyment from it, or whether it will just waste a lot of time! If my suspicions are correct, you're reading these words on the back cover right now, standing in the bookstore deciding whether to buy the book.  There's a good chance, I hope, that you'll actually decide to take the book home with you. Perhaps I've been luckier and decided to start reading it quickly. I think that, regardless of whether you agree or disagree with it, it will most likely, God willing, prompt you to reflect! Perhaps you'll find some useful information or words you'd like to keep. You might then consider heading to the nearest piece of paper to jot it all down. You may have more papers to write down, and by the time you finish reading the book, you'll probably have many of the same useful information you learned from it.  Now, I want you to gather these papers, organize them well, and place them in an elegant cover of your choice. Then, take them in your hand and go to your kitchen to make a cup of your favorite soothing hot drink. Before you leave the kitchen, throw the papers into the flames of the stove and take a sip of your drink while you watch them burn!  I don't want you to remember anything from this book."
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonFavReligQuranic" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>

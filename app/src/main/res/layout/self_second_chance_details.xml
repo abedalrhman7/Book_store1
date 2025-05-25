@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:ignore="SpeakableTextPresentCheck">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,10 +16,10 @@
             android:layout_height="match_parent">
 
             <ImageButton
-                android:id="@+id/imageButtonFavMessage"
+                android:id="@+id/imageButtonFavSelfSecond"
                 android:layout_width="55dp"
                 android:layout_height="55dp"
-                android:layout_marginTop="288dp"
+                android:layout_marginTop="289dp"
                 android:layout_marginEnd="16dp"
                 android:backgroundTint="#40FFFFFF"
                 android:scaleType="centerInside"
@@ -29,7 +30,7 @@
                 tools:srcCompat="@drawable/heart" />
 
             <ImageView
-                android:id="@+id/imageView9"
+                android:id="@+id/imageView16"
                 android:layout_width="235dp"
                 android:layout_height="289dp"
                 android:layout_marginStart="86dp"
@@ -40,41 +41,36 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/amessage_from_god" />
+                app:srcCompat="@drawable/second_chance" />
 
             <TextView
-                android:id="@+id/textView27"
+                android:id="@+id/textView41"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="163dp"
-                android:layout_marginEnd="54dp"
-                android:layout_marginBottom="33dp"
-                android:text="A message From God"
+                android:layout_marginStart="121dp"
+                android:layout_marginEnd="51dp"
+                android:layout_marginBottom="23dp"
+                android:text="Second Chance"
                 android:textSize="24sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/textView28"
-                app:layout_constraintEnd_toStartOf="@+id/imageButtonFavMessage"
-                app:layout_constraintHorizontal_bias="0.672"
+                app:layout_constraintBottom_toTopOf="@+id/textView42"
+                app:layout_constraintEnd_toStartOf="@+id/imageButtonFavSelfSecond"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView9"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintTop_toBottomOf="@+id/imageView16" />
 
             <TextView
-                android:id="@+id/textView28"
+                android:id="@+id/textView42"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="14dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="12dp"
+                android:layout_marginTop="8dp"
                 android:gravity="center"
                 android:scrollHorizontally="false"
-                android:text="The Quran was and will remain a method for building life... a sun for every seeker... a comfort for every worried person... and a lifeline for every confused person. It is a unique world... the world of the Quran... a magical and rich world. The more you delve into it, the more you learn, understand, enjoy, and your mind will be enlightened by all its beautiful meanings. An enjoyable and rich book, full of meanings and concepts of light... and treasures of knowledge, love, and humanity... and messages to us from Allah Almighty that are as countless as the verses of the Quran. Enjoy, through the pages of this book, a small part of Allah’s messages, and live and delve into the Quran with the pages of the book (A Message from Allah)"
+                android:text="Have you ever experienced frustration? Because you're not satisfied with your life, and you know something must change, but you don't know what... or perhaps you don't have the courage to try! Have you ever charted a successful path for yourself, but you couldn't pursue your dream, and you justified your weakness and believed it so you wouldn't risk a new experience you weren't sure would succeed? In this book you're about to read, you'll learn the reasons that hold you back and prevent you from reaching your goal. You'll understand the steps you must go through when you begin to think and search for real answers to questions that have preoccupied you for years! What are the stages of change? What are the characteristics of each stage? ● How can you overcome the terror and fear of the experience? ● What practical steps will help you on your new journey toward true change? In this book, you will discover the path to your second chance!"
                 android:textSize="24sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.538"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageButtonFavMessage" />
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonFavSelfSecond" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 </ScrollView>

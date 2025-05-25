@@ -28,9 +28,9 @@ public class ReligiousStudiesActivity extends AppCompatActivity {
         }
 
         ImageView Religious1Image = findViewById(R.id.imageViewReligiousAMaessageFromGod);
-        ImageView Sport2Image = findViewById(R.id.imageViewSportFootballWars);
-        ImageView Sport3Image = findViewById(R.id.imageViewSportShikabalaRebel);
-        ImageView Sport4Image = findViewById(R.id.imageViewSportLiverpoolCity);
+        ImageView Religious2Image = findViewById(R.id.imageViewReligiousQuranicAnswer);
+        ImageView Religious3Image = findViewById(R.id.imageViewReligiousGeniusOfMuhammad1);
+        ImageView Religious4Image = findViewById(R.id.imageViewReligiousLosTreasure);
 
 
         View.OnClickListener commonBookClickListener = new View.OnClickListener() {
@@ -40,8 +40,44 @@ public class ReligiousStudiesActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         };
+        View.OnClickListener commonBook1ClickListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ReligiousStudiesActivity.this, ReligiousQuranicDetailsActivity.class);
+                startActivity(intent);
+            }
+        };
+
+        View.OnClickListener commonBook2ClickListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ReligiousStudiesActivity.this, ReligiousGeniusMuhammadDetailsActivity.class);
+                startActivity(intent);
+            }
+        };
+
+        View.OnClickListener commonBook3ClickListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ReligiousStudiesActivity.this, ReligiousTheLosTreasureDetailsActivity.class);
+                startActivity(intent);
+            }
+        };
         if (Religious1Image != null) {
             Religious1Image.setOnClickListener(commonBookClickListener);
+        }
+
+        if (Religious2Image != null) {
+            Religious2Image.setOnClickListener(commonBook1ClickListener);
+        }
+
+
+        if (Religious3Image != null) {
+            Religious3Image.setOnClickListener(commonBook2ClickListener);
+        }
+
+        if (Religious4Image != null) {
+            Religious4Image.setOnClickListener(commonBook3ClickListener);
         }
 
     }

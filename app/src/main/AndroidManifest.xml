@@ -49,7 +49,7 @@
         <activity android:name=".HistoryPoliticsActivity">
 
         </activity>
-        <activity android:name=".SelfDevelopmentActivity">
+        <activity android:name="SelfDevelopmentBooksDetails.SelfDevelopmentActivity">
 
         </activity>
         <activity android:name="ReligiousBooksDetails.ReligiousStudiesActivity">
@@ -113,6 +113,35 @@
         <activity android:name="ReligiousBooksDetails.ReligiousMessageDetailsActivity">
 
     </activity>
+
+        <activity android:name="ReligiousBooksDetails.ReligiousQuranicDetailsActivity">
+
+        </activity>
+
+        <activity android:name="ReligiousBooksDetails.ReligiousGeniusMuhammadDetailsActivity">
+
+        </activity>
+
+
+        <activity android:name="ReligiousBooksDetails.ReligiousTheLosTreasureDetailsActivity">
+
+        </activity>
+
+        <activity android:name="SelfDevelopmentBooksDetails.SelfDevelopmentInvestmentDetails">
+
+        </activity>
+
+        <activity android:name="SelfDevelopmentBooksDetails.SelfDevelopmentDecodeBodyDetails">
+
+        </activity>
+
+        <activity android:name="SelfDevelopmentBooksDetails.SelfDevelopmentIdidntWarnDetails">
+
+        </activity>
+
+        <activity android:name="SelfDevelopmentBooksDetails.SelfDevelopmentSecondChanceDetails">
+
+        </activity>
     </application>
 
 </manifest>

@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:ignore="SpeakableTextPresentCheck">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,13 +16,15 @@
             android:layout_height="match_parent">
 
             <ImageButton
-                android:id="@+id/imageButtonFavMessage"
+                android:id="@+id/imageButtonFavReligGeniusMuhammad"
                 android:layout_width="55dp"
                 android:layout_height="55dp"
-                android:layout_marginTop="288dp"
+                android:layout_marginTop="286dp"
                 android:layout_marginEnd="16dp"
+                android:layout_marginBottom="17dp"
                 android:backgroundTint="#40FFFFFF"
                 android:scaleType="centerInside"
+                app:layout_constraintBottom_toTopOf="@+id/textView32"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/heart"
@@ -29,7 +32,7 @@
                 tools:srcCompat="@drawable/heart" />
 
             <ImageView
-                android:id="@+id/imageView9"
+                android:id="@+id/imageView11"
                 android:layout_width="235dp"
                 android:layout_height="289dp"
                 android:layout_marginStart="86dp"
@@ -40,41 +43,36 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/amessage_from_god" />
+                app:srcCompat="@drawable/the_genius_of_muhammad" />
 
             <TextView
-                android:id="@+id/textView27"
+                android:id="@+id/textView31"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="163dp"
-                android:layout_marginEnd="54dp"
-                android:layout_marginBottom="33dp"
-                android:text="A message From God"
-                android:textSize="24sp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginBottom="46dp"
+                android:text="Genius OF Muhammad"
+                android:textSize="20sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/textView28"
-                app:layout_constraintEnd_toStartOf="@+id/imageButtonFavMessage"
-                app:layout_constraintHorizontal_bias="0.672"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView9"
+                app:layout_constraintBottom_toTopOf="@+id/textView32"
+                app:layout_constraintEnd_toStartOf="@+id/imageButtonFavReligGeniusMuhammad"
+                app:layout_constraintTop_toBottomOf="@+id/imageView11"
                 app:layout_constraintVertical_bias="0.0" />
 
             <TextView
-                android:id="@+id/textView28"
+                android:id="@+id/textView32"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="14dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="12dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="1dp"
                 android:gravity="center"
                 android:scrollHorizontally="false"
-                android:text="The Quran was and will remain a method for building life... a sun for every seeker... a comfort for every worried person... and a lifeline for every confused person. It is a unique world... the world of the Quran... a magical and rich world. The more you delve into it, the more you learn, understand, enjoy, and your mind will be enlightened by all its beautiful meanings. An enjoyable and rich book, full of meanings and concepts of light... and treasures of knowledge, love, and humanity... and messages to us from Allah Almighty that are as countless as the verses of the Quran. Enjoy, through the pages of this book, a small part of Allah’s messages, and live and delve into the Quran with the pages of the book (A Message from Allah)"
+                android:text="This introduction takes us back thirty years, to the day I first heard a suggestion to write a book about Muhammad, peace be upon him. I was living at the time in the Abbasiya al-Bahriya suburb, close to the square that was set up to celebrate the Prophet's birthday every year. We had a group of friends who were engaged in literature, who shared his Arabic and European books, and who would frequent the national neighborhoods together, rarely visiting others. They would still move from time to time between the Husseini neighborhood and the Zainabi neighborhood, or between Manshiyat al-Qalaa and the Abbasiya suburb, or between al-Rawda and al-Khalij... depending on the occasion, and often for no reason. It was a group that united the opposites of the world: the opposites of youth, the opposites of artistic life, the opposites of the differences in environment between those growing up in the capital and those growing up in the countryside, those growing up in Upper Egypt and those growing up on the borderlands, and other such opposites that were an adornment for this group, but were not causes of dispersion and fragmentation."
                 android:textSize="24sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.538"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageButtonFavMessage" />
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonFavReligGeniusMuhammad" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 </ScrollView>

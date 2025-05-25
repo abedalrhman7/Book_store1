@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import MentalBooksDetails.MentalHealthActivity;
 import ReligiousBooksDetails.ReligiousStudiesActivity;
+import SelfDevelopmentBooksDetails.SelfDevelopmentActivity;
 import SportBooksDetails.SportActivity;
 
 public class CategoriesActivity extends AppCompatActivity {

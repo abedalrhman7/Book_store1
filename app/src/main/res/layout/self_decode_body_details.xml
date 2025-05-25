@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="SpeakableTextPresentCheck">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imageButtonFavSelfDecode"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="288dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="#40FFFFFF"
+                android:scaleType="centerInside"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/heart"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:srcCompat="@drawable/heart" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="236dp"
+                android:layout_height="289dp"
+                android:layout_marginStart="96dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="9dp"
+                app:layout_constraintBottom_toTopOf="@+id/textView35"
+                app:layout_constraintEnd_toStartOf="@+id/imageButtonFavSelfDecode"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/decode_your_body" />
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="115dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="36dp"
+                android:text="Decode Your Body"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/textView38"
+                app:layout_constraintEnd_toStartOf="@+id/imageButtonFavSelfDecode"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView14"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:gravity="center"
+                android:text="The Relationship Between Organic Illness and Psychological Trauma ‎ (The body doesn't forget... it remembers everything) ‎ Not all illnesses we suffer from are purely organic. ‎ This brings us back to the first theory in psychology, which is to heal from the inside out, not the other way around. ‎ There is something called &quot;the psychophysiology of trauma.&quot; ‎ This theory states that when we are exposed to any psychological trauma, whether it be a loss, grief, or a specific, severely painful event that ultimately leads to psychological trauma, this trauma affects more than just the psychological sphere of the person. ‎ Among these organic diseases are hundreds for which medicine has been unable to put an end to the suffering of the sufferer or to this physical illness. ‎ The body speaks, this is a fact. ‎ This is what this book addresses, and it will change many of the world's concepts about disease itself. ‎ It is an anatomy of the human being psychologically, spiritually, organically, and mentally. ‎ What the soul conceals cries out at some point."
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonFavSelfDecode" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</ScrollView>
