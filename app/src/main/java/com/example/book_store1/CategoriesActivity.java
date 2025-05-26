@@ -5,20 +5,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import MentalBooksDetails.MentalHealthActivity;
-import ReligiousBooksDetails.ReligiousStudiesActivity;
-import SelfDevelopmentBooksDetails.SelfDevelopmentActivity;
 import SportBooksDetails.SportActivity;
+import android.widget.Button;
+
 
 public class CategoriesActivity extends AppCompatActivity {
-Button buttonRegister, buttonLogin;
+    Button buttonLogin, buttonRegister;
+
     String[] categories = {
-            "Management and Business", "Literature and Novels", "History and Politics", "Self development", "Religious Studies",
+            "Management and Business Administration", "Literature and Novels", "History and Politics", "Self development", "Religious Studies",
             "Sport", "Mental health", "Health and Diet"
     };
 
@@ -38,31 +38,33 @@ Button buttonRegister, buttonLogin;
         );
 
         listView.setAdapter(adapter);
-        buttonRegister =findViewById(R.id.button6);
-        buttonLogin = findViewById(R.id.button9);
-    buttonRegister.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Intent reginterIntent = new Intent(CategoriesActivity.this, RegisterActivity.class);
 
-            startActivity(reginterIntent);
-        }
-    });
+        buttonLogin = findViewById(R.id.button9);
+        buttonRegister = findViewById(R.id.button6);
 
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent loginIntent = new Intent(CategoriesActivity.this, LoginActivity.class);
-
                 startActivity(loginIntent);
             }
         });
+
+        buttonRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent registerIntent = new Intent(CategoriesActivity.this, RegisterActivity.class);
+                startActivity(registerIntent);
+            }
+        });
+
+
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String selectedCategory = categories[position];
 
-                if (selectedCategory.equals("Management and Business")) {
+                if (selectedCategory.equals("Management and Business Administration")) {
                     Intent intent = new Intent(CategoriesActivity.this, ManagementAdminActivity.class);
                     startActivity(intent);
                 } else if (selectedCategory.equals("Literature and Novels")) {

@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -19,7 +18,7 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.registration); // Change to your actual layout file
-
+        Button buttonLoginNow = findViewById(R.id.button2);
         editTextFullName = findViewById(R.id.editTextFullName);
         editTextEmail = findViewById(R.id.editTextEmail);
         editTextPhone = findViewById(R.id.editTextPhone);
@@ -27,9 +26,6 @@ public class RegisterActivity extends AppCompatActivity {
         buttonSignUp = findViewById(R.id.button);
 
         dataManager = new DataManager(this);
-
-
-
 
         buttonSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,5 +50,17 @@ public class RegisterActivity extends AppCompatActivity {
                 }
             }
         });
+
+
+        buttonLoginNow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navigate to LoginActivity
+                Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
     }
 }

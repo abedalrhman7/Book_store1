@@ -1,9 +1,11 @@
 package com.example.book_store1;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,7 +21,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login); // Ensure this matches your XML filename
 
-        // Ensure IDs in login.xml match these
+        TextView textViewRegister = findViewById(R.id.textViewRegister);
         editTextEmailPhone = findViewById(R.id.editTextEmailPhone);
         editTextPassword = findViewById(R.id.editTextPassword);
         buttonSignIn = findViewById(R.id.buttonSignIn);
@@ -46,5 +48,17 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
+
+
+        textViewRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navigate to RegisterActivity
+                Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
     }
 }

@@ -21,7 +21,7 @@ public class DetailActivity extends AppCompatActivity {
         if (layoutId != 0) {
             setContentView(layoutId);
         } else {
-            setContentView(R.layout.activity_main); // fallback
+            setContentView(R.layout.activity_categories); // fallback
         }
 
         // Enable action bar back arrow (optional if you're using the system action bar)
