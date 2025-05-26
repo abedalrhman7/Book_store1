@@ -50,15 +50,17 @@ public class LoginActivity extends AppCompatActivity {
         });
 
 
-        textViewRegister.setOnClickListener(new View.OnClickListener() {
+        Button buttonRegisterNow = findViewById(R.id.buttonRegisterNow);
+        buttonRegisterNow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Navigate to RegisterActivity
                 Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
                 startActivity(intent);
-                finish();
+                finish(); // Optional: close login screen
             }
         });
+
 
     }
 }
