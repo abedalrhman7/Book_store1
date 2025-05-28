@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:backgroundTintMode="add"
-        android:src="@drawable/heart_imresizer" />
+        android:src="@drawable/heart_new4_imresizer" />
 
     <ImageButton
         android:id="@+id/cart_button"
@@ -29,7 +29,7 @@
         android:layout_weight="1"
         android:backgroundTint="#B8ABAB"
         android:backgroundTintMode="add"
-        android:src="@drawable/shopping_cart" />
+        android:src="@drawable/shopping_cart_new_imresizer" />
 
     <ImageButton
         android:id="@+id/account_button"
@@ -37,5 +37,5 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:backgroundTintMode="add"
-        android:src="@drawable/user_imresizer" />
+        android:src="@drawable/user_new_3_imresizer" />
 </LinearLayout>

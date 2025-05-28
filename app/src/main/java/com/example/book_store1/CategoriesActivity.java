@@ -10,6 +10,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import MentalBooksDetails.MentalHealthActivity;
+import ReligiousBooksDetails.ReligiousStudiesActivity;
+import SelfDevelopmentBooksDetails.SelfDevelopmentActivity;
 import SportBooksDetails.SportActivity;
 import android.widget.Button;
 
