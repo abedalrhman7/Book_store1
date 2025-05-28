@@ -25,7 +25,7 @@
                 android:scaleType="centerInside"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@android:drawable/star_big_on"
+                app:srcCompat="@drawable/heart"
                 tools:ignore="SpeakableTextPresentCheck"
                 tools:srcCompat="@drawable/heart" />
 
@@ -48,10 +48,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="131dp"
                 android:layout_marginTop="13dp"
+                android:layout_marginEnd="43dp"
+                android:layout_marginBottom="39dp"
                 android:gravity="center"
                 android:text="Football Wars"
                 android:textSize="24sp"
                 android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/textView16"
+                app:layout_constraintEnd_toStartOf="@+id/imageButtonFavFootballWars"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 

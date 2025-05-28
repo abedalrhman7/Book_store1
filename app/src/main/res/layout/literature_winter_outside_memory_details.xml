@@ -16,19 +16,19 @@
 
             <ImageButton
                 android:id="@+id/imageButtonFavNovelsWinterMemory"
-                tools:ignore="SpeakableTextPresentCheck"
-                tools:srcCompat="@drawable/heart"
                 android:layout_width="55dp"
                 android:layout_height="55dp"
                 android:layout_marginTop="288dp"
-                android:layout_marginEnd="32dp"
+                android:layout_marginEnd="24dp"
                 android:layout_marginBottom="22dp"
                 android:backgroundTint="#40FFFFFF"
                 android:scaleType="centerInside"
                 app:layout_constraintBottom_toTopOf="@+id/textView26"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/heart" />
+                app:srcCompat="@drawable/heart"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:srcCompat="@drawable/heart" />
 
             <ImageView
                 android:id="@+id/imageView23"
@@ -52,12 +52,14 @@
                 android:layout_marginEnd="2dp"
                 android:layout_marginBottom="21dp"
                 android:text="Winter Outside Memory"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toTopOf="@+id/textView56"
                 app:layout_constraintEnd_toStartOf="@+id/imageButtonFavNovelsWinterMemory"
+                app:layout_constraintHorizontal_bias="0.632"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView23" />
+                app:layout_constraintTop_toBottomOf="@+id/imageView23"
+                app:layout_constraintVertical_bias="0.0" />
 
             <TextView
                 android:id="@+id/textView56"

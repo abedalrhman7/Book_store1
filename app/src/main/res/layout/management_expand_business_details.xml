@@ -52,7 +52,7 @@
                 android:layout_marginEnd="1dp"
                 android:layout_marginBottom="19dp"
                 android:text="How To Expand Your Business"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toTopOf="@+id/textView64"
                 app:layout_constraintEnd_toStartOf="@+id/imageButtonFavManageExpandBusiness"
