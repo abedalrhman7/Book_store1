@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imageButtonFavManageKeepYourSeat"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="288dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="22dp"
+                android:backgroundTint="#40FFFFFF"
+                android:scaleType="centerInside"
+                app:layout_constraintBottom_toTopOf="@+id/textView26"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/heart"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:srcCompat="@drawable/heart" />
+
+            <ImageView
+                android:id="@+id/imageView24"
+                android:layout_width="235dp"
+                android:layout_height="289dp"
+                android:layout_marginStart="86dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="86dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/textView19"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/keep_your_seat_on_the_bus" />
+
+            <TextView
+                android:id="@+id/textView57"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="68dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="5dp"
+                android:text="Keep Your Seat ON The Bus"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/imageButtonFavManageKeepYourSeat"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView24" />
+
+            <TextView
+                android:id="@+id/textView58"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:gravity="center"
+                android:scrollHorizontally="false"
+                android:text="Why do you work? Why do you work in this job? What does your work and job offer you? What are your skills and strengths? What opportunities can you access? And how does your job fulfill your desires? All these questions and more make you think: Why do you need to keep your job, fight for it, and resist the voices that urge you to be someone else in a different reality? However, &quot;May God have mercy on the person who knows his own worth.&quot; This is a humane prophetic wisdom that makes you look at yourself from a realistic perspective without belittling or exaggerating. In fact, professional life is one of the paths to self-knowledge, through which an individual discovers his potential and contributes to significant roles through which he can achieve what he cannot achieve alone. However, this is suitable for some, while others take other paths to seek a livelihood."
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonFavManageKeepYourSeat" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</ScrollView>

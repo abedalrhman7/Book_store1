@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imageButtonFavManageTimeManagement"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:srcCompat="@drawable/heart"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="288dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="22dp"
+                android:backgroundTint="#40FFFFFF"
+                android:scaleType="centerInside"
+                app:layout_constraintBottom_toTopOf="@+id/textView26"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/heart" />
+
+            <ImageView
+                android:id="@+id/imageView25"
+                android:layout_width="235dp"
+                android:layout_height="289dp"
+                android:layout_marginStart="86dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="86dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/textView19"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/time_management" />
+
+            <TextView
+                android:id="@+id/textView59"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="104dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="30dp"
+                android:text="Time Management"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/textView60"
+                app:layout_constraintEnd_toStartOf="@+id/imageButtonFavManageTimeManagement"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView25" />
+
+            <TextView
+                android:id="@+id/textView60"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:scrollHorizontally="false"
+                android:text="Time Management Book: You will not find in this book the magic formula that will make you organized or manage your time effectively, but the book contains a lot of advice and information that will seriously help you organize your thoughts and reprogram. The book came in a smooth and variable style. In some places you will find it in the form of points, in other places you will find it in a dialogue style, and in some other places you will find it in the form of short stories."
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonFavManageTimeManagement" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>

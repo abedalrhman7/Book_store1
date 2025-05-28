@@ -9,6 +9,9 @@ import android.widget.ListView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
+import HistoryBooksDetails.HistoryPoliticsActivity;
+import LiteratureBooksDetails.LiteratureNovelsActivity;
+import ManagementBooksDetails.ManagementAdminActivity;
 import MentalBooksDetails.MentalHealthActivity;
 import ReligiousBooksDetails.ReligiousStudiesActivity;
 import SelfDevelopmentBooksDetails.SelfDevelopmentActivity;

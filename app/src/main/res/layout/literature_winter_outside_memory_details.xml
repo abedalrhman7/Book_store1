@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imageButtonFavNovelsWinterMemory"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:srcCompat="@drawable/heart"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="288dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="22dp"
+                android:backgroundTint="#40FFFFFF"
+                android:scaleType="centerInside"
+                app:layout_constraintBottom_toTopOf="@+id/textView26"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/heart" />
+
+            <ImageView
+                android:id="@+id/imageView23"
+                android:layout_width="235dp"
+                android:layout_height="289dp"
+                android:layout_marginStart="86dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="86dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/textView19"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/winter_outside_memory" />
+
+            <TextView
+                android:id="@+id/textView55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="67dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="21dp"
+                android:text="Winter Outside Memory"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/textView56"
+                app:layout_constraintEnd_toStartOf="@+id/imageButtonFavNovelsWinterMemory"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView23" />
+
+            <TextView
+                android:id="@+id/textView56"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:gravity="center"
+                android:scrollHorizontally="false"
+                android:text="Imagine you're sitting at home with your family and loved ones, enjoying the winter atmosphere, falling in love with your favorite season, and reading your fantasy novels, and then everything turns upside down just because you light the wood-burning stove! You discover that winter isn't peaceful and that your life, which you pride yourself on being transparent and honest, isn't what you thought it was! What would happen if those winters that had been forgotten came back to mind, awakening feelings and events that had been buried and silenced by oblivion? A novel that may seem like a story about a person, but it's much more than that."
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonFavNovelsWinterMemory" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>

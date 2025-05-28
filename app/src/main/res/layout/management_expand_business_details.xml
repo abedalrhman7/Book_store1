@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imageButtonFavManageExpandBusiness"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="288dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="22dp"
+                android:backgroundTint="#40FFFFFF"
+                android:scaleType="centerInside"
+                app:layout_constraintBottom_toTopOf="@+id/textView26"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/heart"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:srcCompat="@drawable/heart" />
+
+            <ImageView
+                android:id="@+id/imageView27"
+                android:layout_width="235dp"
+                android:layout_height="289dp"
+                android:layout_marginStart="86dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="86dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/textView19"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/how_to_expand_your_business" />
+
+            <TextView
+                android:id="@+id/textView63"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="65dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="19dp"
+                android:text="How To Expand Your Business"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/textView64"
+                app:layout_constraintEnd_toStartOf="@+id/imageButtonFavManageExpandBusiness"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView27" />
+
+            <TextView
+                android:id="@+id/textView64"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:scrollHorizontally="false"
+                android:text="&quot;How do I create a distinctive brand identity?&quot; &quot;How do I avoid excess expenses that eat into my profit margin?&quot; &quot;How do I choose a location for my store?&quot; &quot;How do I make my store vibrant regardless of its location?&quot; &quot;What are the critical mistakes that could ruin my business?&quot; All these questions and others that are on the mind of any merchant with an existing project, or who is considering starting a new business, are answered in this book, supported by the real-life experiences of hundreds of merchants who were able to save their businesses and elevate them to the ranks of major stores. In this book, you'll learn that the smallest details of your business are so important that a small detail can lead to your failure, while another can save you and increase your profits exponentially."
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonFavManageExpandBusiness" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</ScrollView>

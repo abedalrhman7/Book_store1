@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imageButtonFavHistoryArabNazis"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="288dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="22dp"
+                android:backgroundTint="#40FFFFFF"
+                android:scaleType="centerInside"
+                app:layout_constraintBottom_toTopOf="@+id/textView26"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/heart"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:srcCompat="@drawable/heart" />
+
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="235dp"
+                android:layout_height="289dp"
+                android:layout_marginStart="86dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="86dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/textView19"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/arab_nazis" />
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="147dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="62dp"
+                android:text="Arab Nazis"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/textView46"
+                app:layout_constraintEnd_toStartOf="@+id/imageButtonFavHistoryArabNazis"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView18" />
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:gravity="center"
+                android:scrollHorizontally="false"
+                android:text="Oh Cairo of Al-Mu'izz, what a vanquished one you have vanquished, and how many a vanquisher has vanquished you! They say about time that it is the father of every wonder, and among the wonders of time and the vicissitudes of fate is that Egypt and its vanquished Cairo were made an object of desire for the peoples of the world after their sovereignty: the Turks, the British, the French, and many others. In those days, the Egyptians were in the line of fire and bombing by the Germans, and their ancient capital was preparing to receive a great savior or a new occupier, for no one possesses the acumen to be certain, or the luxury of confirmation. But... and because they are an exceedingly kind people, extremely docile, they rejoiced in the past when Alexander the Great journeyed to the Temple of Amun in Siwa, and he was called the Son of God after he had conquered them, as if the desert journey had liberated the invading newcomer and cleansed him of his sins. They considered that the great invader had become of their religion, from them, in them, and upon them. Centuries passed and the descendants rejoiced over Napoleon, the new French invader. When he announced his conversion to Islam, they called him “Ali Pasha Bonaparte” and considered him of their religion, from them, in them, and against them. Years of ink passed and the descendants of the descendants rejoiced over Muhammad Ali, the new Albanian arrival. They entrusted him with their affairs and elevated him to their throne, and considered him of them, in them, and against them."
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonFavHistoryArabNazis" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>

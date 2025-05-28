@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Book_store1</string>
+    <string name="app_name">Book Store</string>
     <string name="todo">TODO</string>
     <string name="open">Open drawer</string>
     <string name="close">Close drawer</string>

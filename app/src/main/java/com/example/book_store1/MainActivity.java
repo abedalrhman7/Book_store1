@@ -1,6 +1,5 @@
 package com.example.book_store1;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -18,8 +17,10 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.navigation.NavigationView;
 
+import HistoryBooksDetails.HistoryPoliticsActivity;
+import LiteratureBooksDetails.LiteratureNovelsActivity;
+import ManagementBooksDetails.ManagementAdminActivity;
 import MentalBooksDetails.MentalHealthActivity;
-import ReligiousBooksDetails.ReligiousBooksDetailsActivity;
 import ReligiousBooksDetails.ReligiousStudiesActivity;
 import SelfDevelopmentBooksDetails.SelfDevelopmentActivity;
 import SportBooksDetails.SportActivity;

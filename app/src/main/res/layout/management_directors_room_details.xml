@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imageButtonFavManageDirectors"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:srcCompat="@drawable/heart"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="288dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="22dp"
+                android:backgroundTint="#40FFFFFF"
+                android:scaleType="centerInside"
+                app:layout_constraintBottom_toTopOf="@+id/textView26"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/heart" />
+
+            <ImageView
+                android:id="@+id/imageView28"
+                android:layout_width="235dp"
+                android:layout_height="289dp"
+                android:layout_marginStart="86dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="86dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/textView19"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/dierectors_room" />
+
+            <TextView
+                android:id="@+id/textView65"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="119dp"
+                android:layout_marginEnd="34dp"
+                android:layout_marginBottom="34dp"
+                android:text="Director's Room"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/textView66"
+                app:layout_constraintEnd_toStartOf="@+id/imageButtonFavManageDirectors"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView28" />
+
+            <TextView
+                android:id="@+id/textView66"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:scrollHorizontally="false"
+                android:text="There are those who live solely on their own experience, which is only fully realized as they approach old age. There are those who live with the experiences of both the elderly and the young, and even of men and women simultaneously. It is not required, nor is it possible, to copy the experiences of others as they are, but rather to take them into consideration. In this book, I convey aspects of my own experience in education and work, not as an absolutely successful experience worthy of emulation, but rather as the most I can offer the reader, for whom I love what I love for myself, is to advise them on the best advice I have found useful for myself, and to warn them against the worst I have encountered along the way. Then it is up to them to take from this and leave behind, depending on their personality, circumstances, and field."
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonFavManageDirectors" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</ScrollView>

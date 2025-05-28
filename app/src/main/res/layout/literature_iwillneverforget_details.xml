@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imageButtonFavNovelsNeverForget"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:srcCompat="@drawable/heart"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="288dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="22dp"
+                android:backgroundTint="#40FFFFFF"
+                android:scaleType="centerInside"
+                app:layout_constraintBottom_toTopOf="@+id/textView26"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/heart" />
+
+            <ImageView
+                android:id="@+id/imageView21"
+                android:layout_width="235dp"
+                android:layout_height="289dp"
+                android:layout_marginStart="86dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="86dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/textView19"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/i_will_never_forget" />
+
+            <TextView
+                android:id="@+id/textView51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="108dp"
+                android:layout_marginEnd="18dp"
+                android:text="I Will Never Forget"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/imageButtonFavNovelsNeverForget"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView21" />
+
+            <TextView
+                android:id="@+id/textView52"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:gravity="center"
+                android:scrollHorizontally="false"
+                android:text="Don't be fooled by the beautiful, calm cover by the creative Karim Adam, for inside lies a revolution raging within... A novel you initially think is social, but as events unfold, you find yourself facing psychological obstacles that drive you mad. A little excitement and suspense are fine to increase the enjoyment, but in the end, everyone is a criminal and everyone is a victim, knowing that this is not the true end of the story... Beautiful narrative language that compels you to devour the lines. You can't begin without ending it. A completely absurd and realistic idea at the same time, raising many questions within you. But the ending, although it doesn't answer your questions, makes you feel satisfied and also warns you that when souls are struck by love, they either soar to the seventh heaven or bring you down to the seventh earth... I thoroughly enjoyed every word and look forward to more from Fatima Talal."
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonFavNovelsNeverForget" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</ScrollView>
