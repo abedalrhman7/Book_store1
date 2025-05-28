@@ -27,6 +27,14 @@
             android:layout_height="110dp"
             android:layout_weight="1" />
     </LinearLayout>
+    <Button
+        android:id="@+id/openBookDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Guardian Book Detail"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"/>
+
 
     <!-- Navigation drawer menu -->
     <com.google.android.material.navigation.NavigationView

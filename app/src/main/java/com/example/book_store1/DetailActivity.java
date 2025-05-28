@@ -1,5 +1,7 @@
 package com.example.book_store1;
 
+import static android.content.Intent.getIntent;
+
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.widget.ImageView;
@@ -14,7 +16,7 @@ public class DetailActivity extends AppCompatActivity {
         // Get layout name from intent
         String layoutName = getIntent().getStringExtra("layoutName");
 
-        // Get the layout resource ID
+
         @SuppressLint("DiscouragedApi") int layoutId = getResources().getIdentifier(layoutName, "layout", getPackageName());
 
         // Set the layout

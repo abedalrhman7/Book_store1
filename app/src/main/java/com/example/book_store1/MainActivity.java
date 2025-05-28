@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
@@ -172,5 +173,14 @@ public class MainActivity extends AppCompatActivity {
                 registerView.setBackgroundResource(R.drawable.nav_item_auth_background);
             }
         });
+        Button openDetailButton = findViewById(R.id.openBookDetail);
+        openDetailButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, BookDetailActivity.class);
+            intent.putExtra("title", "Guardian OF The Sky");
+            intent.putExtra("description", "We all have a voice inside us...");
+            intent.putExtra("image", "guardian_of_the_sky");
+            startActivity(intent);
+        });
+
     }
 }

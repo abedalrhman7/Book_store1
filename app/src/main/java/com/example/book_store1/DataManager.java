@@ -18,7 +18,11 @@ public class DataManager extends SQLiteOpenHelper {
     public static final String Table_Row_Email = "email";
     public static final String Table_Row_Phone = "phone";
     public static final String Table_Row_Password = "password";
-
+    public static final String Favorites_Table = "Favorites";
+    public static final String Fav_Col_ID = "_id";
+    public static final String Fav_Col_Title = "title";
+    public static final String Fav_Col_Description = "description";
+    public static final String Fav_Col_Image = "image";
     public DataManager(@Nullable Context context) {
         super(context, Database_Name, null, Database_version);
     }
@@ -32,6 +36,21 @@ public class DataManager extends SQLiteOpenHelper {
                 Table_Row_Phone + " TEXT, " +
                 Table_Row_Password + " TEXT);";
         db.execSQL(query);
+        String userTableQuery = "CREATE TABLE " + Table_Name + " (" +
+                Table_Row_id + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                Table_Row_Name + " TEXT, " +
+                Table_Row_Email + " TEXT, " +
+                Table_Row_Phone + " TEXT, " +
+                Table_Row_Password + " TEXT);";
+
+        String favoriteTableQuery = "CREATE TABLE " + Favorites_Table + " (" +
+                Fav_Col_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                Fav_Col_Title + " TEXT, " +
+                Fav_Col_Description + " TEXT, " +
+                Fav_Col_Image + " TEXT);";
+
+        db.execSQL(userTableQuery);
+        db.execSQL(favoriteTableQuery);
     }
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
@@ -59,5 +78,20 @@ public class DataManager extends SQLiteOpenHelper {
 
         return db.rawQuery(query, selectionArgs).getCount() > 0;
     }
+    public void addFavorite(String title, String description, String image) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues cv = new ContentValues();
+        cv.put(Fav_Col_Title, title);
+        cv.put(Fav_Col_Description, description);
+        cv.put(Fav_Col_Image, image);
+
+        long result = db.insert(Favorites_Table, null, cv);
+        if (result == -1) {
+            Log.i("DataManager", "Failed to add favorite");
+        } else {
+            Log.i("DataManager", "Favorite added");
+        }
+    }
+
 
 }
