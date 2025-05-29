@@ -42,6 +42,7 @@
         <activity android:name=".CategoriesActivity">
 
         </activity>
+        <activity android:name=".CartManager" />
 
         <activity android:name=".LiteratureNovelsActivity">
 
@@ -49,6 +50,7 @@
         <activity android:name=".HistoryPoliticsActivity">
 
         </activity>
+        <activity android:name=".CartActivity" />
         <activity android:name="SelfDevelopmentBooksDetails.SelfDevelopmentActivity">
 
         </activity>

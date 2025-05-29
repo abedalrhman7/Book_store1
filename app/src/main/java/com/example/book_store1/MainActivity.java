@@ -181,6 +181,13 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra("image", "guardian_of_the_sky");
             startActivity(intent);
         });
+        cartButton.setOnClickListener(v -> {
+            CartItem item = new CartItem("Be Happy", 5.0); // Example book
+            CartManager.getInstance().addItem(item);
+
+            Intent intent = new Intent(MainActivity.this, CartActivity.class);
+            startActivity(intent);
+        });
 
     }
 }

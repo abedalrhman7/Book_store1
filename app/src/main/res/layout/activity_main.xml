@@ -21,20 +21,20 @@
             android:layout_marginVertical="50dp"
             android:layout_weight="1" />
 
+        <Button
+            android:id="@+id/openBookDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open Guardian Book Detail"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal" />
+
         <include
             layout="@layout/tollbar"
             android:layout_width="match_parent"
             android:layout_height="110dp"
             android:layout_weight="1" />
     </LinearLayout>
-    <Button
-        android:id="@+id/openBookDetail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Open Guardian Book Detail"
-        android:layout_marginTop="16dp"
-        android:layout_gravity="center_horizontal"/>
-
 
     <!-- Navigation drawer menu -->
     <com.google.android.material.navigation.NavigationView
@@ -43,6 +43,5 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         app:menu="@menu/drawer_menu"
-        app:itemBackground="@drawable/nav_menu_item_background" />/>
-
+        app:itemBackground="@drawable/nav_menu_item_background" />
 </androidx.drawerlayout.widget.DrawerLayout>
