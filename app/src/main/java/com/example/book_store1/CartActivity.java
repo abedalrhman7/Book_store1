@@ -106,6 +106,11 @@ public class CartActivity extends AppCompatActivity {
             quantityView.setText(String.valueOf(quantity[0]));
             updateTotalPrice();
         });
+        if (cartList == null || cartList.isEmpty()) {
+            Toast.makeText(this, "Cart is empty", Toast.LENGTH_SHORT).show();
+            totalPriceView.setText("Total: 0 JD");
+            return;
+        }
 
 
         minusButton.setOnClickListener(v -> {

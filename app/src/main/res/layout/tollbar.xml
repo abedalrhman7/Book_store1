@@ -39,7 +39,7 @@
 
                 android:scaleType="centerInside"
                 android:src="@drawable/home_new_4_imresizer" />
-
+            <include layout="@layout/tollbar" />
             <ImageButton
                 android:id="@+id/wishlist_button"
                 android:layout_width="0dp"
