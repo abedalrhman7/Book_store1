@@ -4,11 +4,13 @@ public class CartItem {
     private String title;
     private String description;
     private double price;
+    private String image; // image resource name (e.g., "guardian_of_the_sky")
 
-    public CartItem(String title, double price) {
+    public CartItem(String title, String description, double price, String image) {
         this.title = title;
         this.description = description;
         this.price = price;
+        this.image = image;
     }
 
     public String getTitle() {
@@ -21,5 +23,9 @@ public class CartItem {
 
     public double getPrice() {
         return price;
+    }
+
+    public String getImage() {
+        return image;
     }
 }

@@ -182,7 +182,13 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
         cartButton.setOnClickListener(v -> {
-            CartItem item = new CartItem("Be Happy", 5.0); // Example book
+            CartItem item = new CartItem(
+                    "Be Happy",
+                    "A book about finding joy.",
+                    5.0,
+                    "be_happy_cover" // Make sure this matches an image in your drawable folder (e.g., res/drawable/be_happy_cover.png)
+            );
+            // Example book
             CartManager.getInstance().addItem(item);
 
             Intent intent = new Intent(MainActivity.this, CartActivity.class);
