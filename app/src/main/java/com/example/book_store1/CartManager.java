@@ -38,4 +38,8 @@ public class CartManager {
     public void clearCart() {
         cartItems.clear();
     }
+
+    public void removeItem(CartItem item) {
+        cartItems.remove(item);
+    }
 }

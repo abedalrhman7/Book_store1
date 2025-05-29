@@ -5,6 +5,10 @@ public class CartItem {
     private String description;
     private double price;
     private String image; // image resource name (e.g., "guardian_of_the_sky")
+    private static int quantity = 1;
+
+    public int  getQuantity() { return quantity; }
+    public void setQuantity(int quantity) { this.quantity = quantity; }
 
     public CartItem(String title, String description, double price, String image) {
         this.title = title;
