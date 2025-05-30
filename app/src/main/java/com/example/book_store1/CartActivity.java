@@ -1,8 +1,10 @@
 package com.example.book_store1;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -28,7 +30,7 @@ public class CartActivity extends AppCompatActivity {
         cartItemsContainer = findViewById(R.id.cart_items_container);
         totalPriceView = findViewById(R.id.total_price);
 
-        // Get cart items
+
         cartList = CartManager.getInstance().getCartItems();
 
         if (cartList == null || cartList.isEmpty()) {
@@ -106,12 +108,6 @@ public class CartActivity extends AppCompatActivity {
             quantityView.setText(String.valueOf(quantity[0]));
             updateTotalPrice();
         });
-        if (cartList == null || cartList.isEmpty()) {
-            Toast.makeText(this, "Cart is empty", Toast.LENGTH_SHORT).show();
-            totalPriceView.setText("Total: 0 JD");
-            return;
-        }
-
 
         minusButton.setOnClickListener(v -> {
             if (quantity[0] > 1) {
@@ -142,6 +138,7 @@ public class CartActivity extends AppCompatActivity {
         cartItemsContainer.addView(itemLayout);
     }
 
+
     private void updateTotalPrice() {
         double newTotal = 0.0;
 
@@ -162,6 +159,7 @@ public class CartActivity extends AppCompatActivity {
 
         totalPriceView.setText("Total: " + newTotal + " JD");
     }
+
 
 
 

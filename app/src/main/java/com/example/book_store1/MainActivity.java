@@ -39,9 +39,11 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        // -------------------------
-        // Drawer + Toolbar setup
-        // -------------------------
+        ImageButton cartButton = findViewById(R.id.cart_button);
+        cartButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, CartActivity.class);
+            startActivity(intent);
+        });
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
 
@@ -123,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
         ImageButton homeButton = findViewById(R.id.home_button);
         ImageButton accountButton = findViewById(R.id.account_button);
         ImageButton wishlistButton = findViewById(R.id.wishlist_button);
-        ImageButton cartButton = findViewById(R.id.cart_button);
+
 
 
         accountButton.setOnClickListener(v -> {
@@ -186,19 +188,8 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra("image", "guardian_of_the_sky");
             startActivity(intent);
         });*/
-        cartButton.setOnClickListener(v -> {
-            CartItem item = new CartItem(
-                    "Be Happy",
-                    "A book about finding joy.",
-                    5.0,
-                    "be_happy_cover" // Make sure this matches an image in your drawable folder (e.g., res/drawable/be_happy_cover.png)
-            );
-            // Example book
-            CartManager.getInstance().addItem(item);
 
-            Intent intent = new Intent(MainActivity.this, CartActivity.class);
-            startActivity(intent);
-        });
+
 
     }
 }
