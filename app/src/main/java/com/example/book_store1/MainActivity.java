@@ -18,8 +18,6 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.navigation.NavigationView;
 
-import HistoryBooksDetails.HistoryPoliticsActivity;
-import LiteratureBooksDetails.LiteratureNovelsActivity;
 import ManagementBooksDetails.ManagementAdminActivity;
 import MentalBooksDetails.MentalHealthActivity;
 import ReligiousBooksDetails.ReligiousStudiesActivity;
@@ -32,16 +30,23 @@ public class MainActivity extends AppCompatActivity {
     private NavigationView navigationView;
     private ActionBarDrawerToggle toggle;
 
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
+        // -------------------------
+        // Drawer + Toolbar setup
+        // -------------------------
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
 
-        Toolbar toolbar = findViewById(R.id.bottom_toolbar);
+
+        Toolbar toolbar = findViewById(R.id.bottom_toolbar); // Make sure toolbar ID matches
         setSupportActionBar(toolbar);
 
         toggle = new ActionBarDrawerToggle(
@@ -51,33 +56,66 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
-        navigationView.setNavigationItemSelectedListener(item -> {
-            int id = item.getItemId();
-            if (id == R.id.management) {
-                startActivity(new Intent(MainActivity.this, ManagementAdminActivity.class));
-            } else if (id == R.id.literature) {
-                startActivity(new Intent(MainActivity.this, LiteratureNovelsActivity.class));
-            } else if (id == R.id.login) {
-                startActivity(new Intent(MainActivity.this, LoginActivity.class));
-            } else if (id == R.id.registration) {
-                startActivity(new Intent(MainActivity.this, RegisterActivity.class));
-            } else if (id == R.id.history) {
-                startActivity(new Intent(MainActivity.this, HistoryPoliticsActivity.class));
-            } else if (id == R.id.self_development) {
-                startActivity(new Intent(MainActivity.this, SelfDevelopmentActivity.class));
-            } else if (id == R.id.religious) {
-                startActivity(new Intent(MainActivity.this, ReligiousStudiesActivity.class));
-            } else if (id == R.id.sport) {
-                startActivity(new Intent(MainActivity.this, SportActivity.class));
-            } else if (id == R.id.mental_health) {
-                startActivity(new Intent(MainActivity.this, MentalHealthActivity.class));
-            } else if (id == R.id.health_dite) {
-                startActivity(new Intent(MainActivity.this, HealthDietActivity.class));
+        // Handle navigation drawer item clicks
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                int id = item.getItemId();
+                if (id == R.id.management) {
+
+                    Intent intent = new Intent(MainActivity.this, ManagementAdminActivity.class);
+                    startActivity(intent);
+                } else if (id == R.id.literature) {
+                    Intent intent = new Intent(MainActivity.this, LiteratureNovelsActivity.class);
+                    startActivity(intent);
+                }
+
+                else if (id == R.id.login) {
+                    Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                    startActivity(intent);
+                }
+                else if (id == R.id.registration) {
+                    Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
+                    startActivity(intent);
+                }
+
+                else if (id == R.id.history) {
+                    Intent intent = new Intent(MainActivity.this, HistoryPoliticsActivity.class);
+                    startActivity(intent);
+                }
+
+                else if (id == R.id.self_development) {
+                    Intent intent = new Intent(MainActivity.this, SelfDevelopmentActivity.class);
+                    startActivity(intent);
+                }
+
+                else if (id == R.id.religious) {
+                    Intent intent = new Intent(MainActivity.this, ReligiousStudiesActivity.class);
+                    startActivity(intent);
+                }
+
+                else if (id == R.id.sport) {
+                    Intent intent = new Intent(MainActivity.this, SportActivity.class);
+                    startActivity(intent);
+                }
+
+                else if (id == R.id.mental_health) {
+                    Intent intent = new Intent(MainActivity.this, MentalHealthActivity.class);
+                    startActivity(intent);
+                }
+
+                else if (id == R.id.health_dite) {
+                    Intent intent = new Intent(MainActivity.this, HealthDietActivity.class);
+                    startActivity(intent);
+                }
+                drawerLayout.closeDrawers();
+                return true;
             }
-            drawerLayout.closeDrawers();
-            return true;
         });
 
+        // -------------------------
+        // Your original ImageButtons
+        // -------------------------
         ImageButton points3Button = findViewById(R.id.Points4);
         ImageButton points2Button = findViewById(R.id.Points2);
         ImageButton pointsBestButton = findViewById(R.id.pointsBest);
@@ -87,21 +125,24 @@ public class MainActivity extends AppCompatActivity {
         ImageButton wishlistButton = findViewById(R.id.wishlist_button);
         ImageButton cartButton = findViewById(R.id.cart_button);
 
-        cartButton.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, CartActivity.class);
-            startActivity(intent);
-        });
 
         accountButton.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, LoginActivity.class);
             startActivity(intent);
+
+        });
+
+        wishlistButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, FavoriteActivity.class);
+            startActivity(intent);
+
         });
 
         homeButton.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, MainActivity.class);
             startActivity(intent);
-        });
 
+        });
         categoriesButton.setOnClickListener(v -> {
             drawerLayout.openDrawer(GravityCompat.START);
         });
@@ -124,6 +165,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this, "Best Seller clicked!", Toast.LENGTH_SHORT).show();
         });
 
+        // Apply custom background to login and registration items
         navigationView.post(() -> {
             View loginView = navigationView.findViewById(R.id.login);
             View registerView = navigationView.findViewById(R.id.registration);
@@ -136,14 +178,27 @@ public class MainActivity extends AppCompatActivity {
                 registerView.setBackgroundResource(R.drawable.nav_item_auth_background);
             }
         });
-
-        Button openDetailButton = findViewById(R.id.openBookDetail);
+       /* Button openDetailButton = findViewById(R.id.openBookDetail);
         openDetailButton.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, BookDetailActivity.class);
             intent.putExtra("title", "Guardian OF The Sky");
             intent.putExtra("description", "We all have a voice inside us...");
             intent.putExtra("image", "guardian_of_the_sky");
             startActivity(intent);
+        });*/
+        cartButton.setOnClickListener(v -> {
+            CartItem item = new CartItem(
+                    "Be Happy",
+                    "A book about finding joy.",
+                    5.0,
+                    "be_happy_cover" // Make sure this matches an image in your drawable folder (e.g., res/drawable/be_happy_cover.png)
+            );
+            // Example book
+            CartManager.getInstance().addItem(item);
+
+            Intent intent = new Intent(MainActivity.this, CartActivity.class);
+            startActivity(intent);
         });
+
     }
 }

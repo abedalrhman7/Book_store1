@@ -44,10 +44,10 @@
         </activity>
         <activity android:name=".CartManager" />
 
-        <activity android:name="LiteratureBooksDetails.LiteratureNovelsActivity">
+        <activity android:name=".LiteratureNovelsActivity">
 
         </activity>
-        <activity android:name="HistoryBooksDetails.HistoryPoliticsActivity">
+        <activity android:name=".HistoryPoliticsActivity">
 
         </activity>
         <activity android:name=".CartActivity" />
@@ -143,6 +143,59 @@
         <activity android:name="SelfDevelopmentBooksDetails.SelfDevelopmentSecondChanceDetails">
 
         </activity>
+
+        <activity android:name="ManagementBooksDetails.ManagementKeepYourSeatDetailsActivity">
+
+        </activity>
+
+        <activity android:name="ManagementBooksDetails.ManagementTimeManagementDetailsActivity">
+
+        </activity>
+
+        <activity android:name="ManagementBooksDetails.ManagementExpandBusinessDetailsActivity">
+
+        </activity>
+
+        <activity android:name="ManagementBooksDetails.ManagementTalkIsNotCheapDetailsActivity">
+
+        </activity>
+
+        <activity android:name="ManagementBooksDetails.ManagementDirectorsRoomDetailsActivity">
+
+        </activity>
+
+        <activity android:name="LiteratureBooksDetails.LiteratureFrankensteinDetailsActivity">
+
+        </activity>
+        <activity android:name="LiteratureBooksDetails.LiteratureLozCaseDetailsActivity">
+
+        </activity>
+
+        <activity android:name="LiteratureBooksDetails.LiteratureIwillNeverForgetDetailsActivity">
+
+        </activity>
+
+        <activity android:name="LiteratureBooksDetails.LiteratureWinterOutsideMemoryDetailsActivity">
+
+        </activity>
+
+        <activity android:name="HistoryBooksDetails.HistoryArabNazisDetailsActivity">
+
+        </activity>
+
+        <activity android:name="HistoryBooksDetails.HistoryPortSaidDetailsActivity">
+
+        </activity>
+
+        <activity android:name="HistoryBooksDetails.HistorySpanishColonistsDetails">
+
+        </activity>
+
+
+        <activity android:name=".FavoriteActivity">
+
+        </activity>
+
     </application>
 
 </manifest>
