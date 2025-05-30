@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CartManager  {
+public class CartManager extends AppCompatActivity  {
 
     // Singleton instance
     private static CartManager instance;
@@ -14,7 +14,7 @@ public class CartManager  {
     private final List<CartItem> cartItems;
 
     // Private constructor for Singleton
-    private CartManager() {
+    public CartManager() {
         cartItems = new ArrayList<>();
     }
 
