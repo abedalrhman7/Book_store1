@@ -18,8 +18,6 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.navigation.NavigationView;
 
-import HistoryBooksDetails.HistoryPoliticsActivity;
-import LiteratureBooksDetails.LiteratureNovelsActivity;
 import ManagementBooksDetails.ManagementAdminActivity;
 import MentalBooksDetails.MentalHealthActivity;
 import ReligiousBooksDetails.ReligiousStudiesActivity;
@@ -127,14 +125,15 @@ public class MainActivity extends AppCompatActivity {
         ImageButton wishlistButton = findViewById(R.id.wishlist_button);
         ImageButton cartButton = findViewById(R.id.cart_button);
 
-        cartButton.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, CartActivity.class);
+
+        accountButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
             startActivity(intent);
 
         });
 
-        accountButton.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+        wishlistButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, FavoriteActivity.class);
             startActivity(intent);
 
         });
@@ -179,14 +178,14 @@ public class MainActivity extends AppCompatActivity {
                 registerView.setBackgroundResource(R.drawable.nav_item_auth_background);
             }
         });
-        Button openDetailButton = findViewById(R.id.openBookDetail);
+       /* Button openDetailButton = findViewById(R.id.openBookDetail);
         openDetailButton.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, BookDetailActivity.class);
             intent.putExtra("title", "Guardian OF The Sky");
             intent.putExtra("description", "We all have a voice inside us...");
             intent.putExtra("image", "guardian_of_the_sky");
             startActivity(intent);
-        });
+        });*/
         cartButton.setOnClickListener(v -> {
             CartItem item = new CartItem(
                     "Be Happy",
@@ -195,7 +194,7 @@ public class MainActivity extends AppCompatActivity {
                     "be_happy_cover" // Make sure this matches an image in your drawable folder (e.g., res/drawable/be_happy_cover.png)
             );
             // Example book
-
+            CartManager.getInstance().addItem(item);
 
             Intent intent = new Intent(MainActivity.this, CartActivity.class);
             startActivity(intent);

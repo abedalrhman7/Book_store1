@@ -1,4 +1,4 @@
-package MentalBooksDetails;
+package com.example.book_store1;
 
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -10,9 +10,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.example.book_store1.DataManager;
-import com.example.book_store1.R;
 
 public class FavoriteActivity extends AppCompatActivity {
     DataManager db;
@@ -48,4 +45,6 @@ public class FavoriteActivity extends AppCompatActivity {
 
         cursor.close();
     }
+
+
 }

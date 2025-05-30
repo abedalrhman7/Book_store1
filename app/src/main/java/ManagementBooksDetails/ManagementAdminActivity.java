@@ -9,9 +9,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.book_store1.R;
 
-import LiteratureBooksDetails.LiteratureFrankensteinDetailsActivity;
-import LiteratureBooksDetails.LiteratureNovelsActivity;
-
 public class ManagementAdminActivity extends AppCompatActivity {
 
     @Override
